@@ -13,7 +13,3 @@ export default defineConfig({
     },
   },
 })
-
-# update 6
-
-# update 6

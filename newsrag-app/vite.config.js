@@ -5,7 +5,3 @@ import preact from '@preact/preset-vite'
 export default defineConfig({
   plugins: [preact()],
 })
-
-# update 11
-
-# update 11

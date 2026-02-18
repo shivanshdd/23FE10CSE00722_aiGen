@@ -167,7 +167,7 @@ export default function App() {
               return updated;
             });
           }
-        } catch {}
+        } catch { }
       }
     }
   };
@@ -177,9 +177,13 @@ export default function App() {
 
       {/* LEFT */}
       <div style={{ width: "60%", padding: "20px", overflowY: "auto" }}>
-        <h1>📰 NewsRAG (Ollama)</h1>
+        <h1>📰 News Research AI</h1>
 
-        <input value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && fetchNews()}
+        />
         <button onClick={fetchNews}>⚡ Fetch News</button>
 
         <select
@@ -280,6 +284,7 @@ export default function App() {
           <input
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && askAI()}
             style={{ width: "75%" }}
           />
           <button onClick={askAI}>Send</button>
