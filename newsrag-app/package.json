@@ -1,0 +1,21 @@
+{
+  "name": "newsrag-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "preact": "^10.29.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.4",
+    "vite": "^8.0.1"
+  }
+}
+
+# update 10
