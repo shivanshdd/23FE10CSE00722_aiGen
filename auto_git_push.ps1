@@ -12,24 +12,16 @@ git remote add origin $repoUrl
 
 git branch -M main
 
-# Initial commit (if needed)
 git add .
 git commit -m "Initial commit" 2>$null
 
-# Create a dummy file for commits
 $dummyFile = "commit_log.txt"
 
-$counter = 1
-
-while ($counter -le 50) {
-    Write-Host "Commit $counter"
-
-    Add-Content $dummyFile "Commit number $counter"
-
+for ($i = 1; $i -le 50; $i++) {
+    Add-Content $dummyFile "Commit $i"
     git add $dummyFile
-    git commit -m "Auto commit $counter"
-
-    $counter++
+    git commit -m "Auto commit $i"
 }
 
-git push -u origin main
+# 🔥 FORCE PUSH
+git push -u origin main --force
