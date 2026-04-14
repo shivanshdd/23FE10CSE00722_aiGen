@@ -177,7 +177,7 @@ export default function App() {
 
       {/* LEFT */}
       <div style={{ width: "60%", padding: "20px", overflowY: "auto" }}>
-        <h1>📰 News Research AI</h1>
+        <h1>📰 NewsRAG (Ollama)</h1>
 
         <input
           value={query}
