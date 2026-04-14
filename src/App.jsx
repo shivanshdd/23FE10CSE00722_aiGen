@@ -12,7 +12,7 @@ export default function App() {
   const [sortType, setSortType] = useState("latest");
   const [loading, setLoading] = useState(false);
 
-  const WORKER_URL = "https://flat-boat-a2b4.shivanshdhyani02.workers.dev";
+  const WORKER_URL =  "https://flat-boat-a2b4.shivanshdhyani02.workers.dev";
 
   // LOAD
   useEffect(() => {
